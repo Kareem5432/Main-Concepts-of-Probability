@@ -4,6 +4,8 @@ An interactive web-based demo built for an Artificial Neural Networks
 course project. Covers four core probability concepts through 
 hands-on visualizations.
 
+🔗 **Live Demo:** https://kareem5432.github.io/Main-Concepts-of-Probability/
+
 ## Demos
 
 | # | Demo | Concept |
@@ -15,8 +17,8 @@ hands-on visualizations.
 
 ## How to Use
 
-**Online:** open the live site link above.  
-**Offline:** download `index.html` and open it in any browser — 
+**Online:** click the live demo link above.  
+**Offline:** download `index.html` and open it in any browser —
 no installation needed.
 
 ## Built With
