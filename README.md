@@ -3,7 +3,7 @@ An interactive web-based demo built for an Artificial Neural Networks
 course project. Covers core probability concepts through hands-on 
 visualizations and a full presentation deck.
 
-🔗 Live Demo: https://kareem5432.github.io/Main-Concepts-of-Probability-Interactive-Demo/
+🔗 Project Live Website: https://kareem5432.github.io/Main-Concepts-of-Probability-Interactive-Demo/
 
 📊 Slides: https://kareem5432.github.io/Main-Concepts-of-Probability-Interactive-Demo/slides.html
 
