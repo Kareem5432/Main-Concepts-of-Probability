@@ -38,4 +38,4 @@ cross-entropy loss. Includes a slide browser, thumbnail strip, and fullscreen mo
 `index.html` in any browser — no installation needed.
 
 ## Built With
-HTML · CSS · Vanilla JavaScript · PDF.js
+HTML · CSS · Vanilla JavaScript
