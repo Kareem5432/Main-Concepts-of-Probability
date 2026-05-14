@@ -646,6 +646,9 @@ function showPage(name) {
   document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
   document.getElementById('nav-' + name).classList.add('active');
   window.scrollTo(0, 0);
+  // Keep the URL hash in sync so back-links from slides/mcq land on the right demo
+  // (try/catch silences SecurityError in sandboxed iframes like Claude's preview)
+  try { history.replaceState(null, '', name === 'home' ? '#' : '#' + name); } catch(e) {}
 
   if (!initialized[name]) {
     initialized[name] = true;
@@ -1107,7 +1110,10 @@ function smUpdate() {
 }
 
 /* ─── Boot ──────────────────────────────────────────── */
-showPage('home');
+// Boot — honour any incoming hash so links from slides/mcq land on the right demo
+const _hashPage = window.location.hash.replace('#', '');
+const _validPages = ['home', 'venn', 'bayes', 'lln', 'softmax'];
+showPage(_validPages.includes(_hashPage) ? _hashPage : 'home');
 </script>
 </body>
 </html>
