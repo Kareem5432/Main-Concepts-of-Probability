@@ -1133,6 +1133,10 @@ function smUpdate() {
   document.getElementById('sm-comp-note').innerHTML=`For the top class (${s.classes[maxIdx]}): Softmax assigns <span class="highlight">${(probs[maxIdx]*100).toFixed(1)}%</span> vs simple normalization's ${(simpleProbs[maxIdx]*100).toFixed(1)}%. The exp() function amplifies the gap between scores, making the winning class stand out more — which produces sharper gradients during training.`;
 }
 
+/* ─── Boot ──────────────────────────────────────────── */
+showPage('home');
+</script>
+
 <!-- ══════════════════════════════════════════════════════
      SLIDES PAGE
 ═══════════════════════════════════════════════════════ -->
@@ -1172,7 +1176,7 @@ function smUpdate() {
 
 <script>
 /* ═══════════════════════════════════════════════════════
-   SLIDES PAGE JS
+   SLIDES JS
 ════════════════════════════════════════════════════════ */
 pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
@@ -1267,8 +1271,6 @@ window.addEventListener('resize', () => {
     slidesResizeTimer = setTimeout(() => slidesRenderPage(slidesCurrentPage), 200);
   }
 });
-</script>
-
 
 document.addEventListener('keydown', e => {
   if (!document.getElementById('page-slides').classList.contains('active')) return;
@@ -1276,8 +1278,6 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   slidesChangePage(-1);
   if (e.key === 'f' || e.key === 'F') slidesToggleFullscreen();
 });
-
-showPage('home');
 </script>
 </body>
 </html>
