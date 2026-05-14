@@ -4,7 +4,9 @@ course project. Covers core probability concepts through hands-on
 visualizations and a full presentation deck.
 
 🔗 Live Demo: https://kareem5432.github.io/Main-Concepts-of-Probability-Interactive-Demo/
+
 📊 Slides: https://kareem5432.github.io/Main-Concepts-of-Probability-Interactive-Demo/slides.html
+
 📝 MCQ Quiz: https://kareem5432.github.io/Main-Concepts-of-Probability-Interactive-Demo/mcq.html
 
 ## Presentation
